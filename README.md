@@ -41,7 +41,7 @@ and the UNH Fullstack Coding Bootcamp
 
 ## Links 
 
-[Fitness Tracker Link](https://protected-badlands-77846.herokuapp.com/)
+[Employee Directory app](https://taylorgonz.com/employee_directory/)
 
 
 ## Contact
