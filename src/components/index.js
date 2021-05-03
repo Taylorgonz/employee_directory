@@ -23,22 +23,24 @@ class Table extends Component {
 
 
         return (
-            <div>
+            <div >
                 <table className="table">
                     <thead>
                         <tr>
                             <th scope="col">Picture</th>
                             <th scope="col">First</th>
                             <th scope="col">Last</th>
+                            <th scope="col">Cell</th>
                             <th scope="col">Email</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.names.map(name => (
-                            <tr>
-                            <th scope="row"><img src={name.picture.thumbnail}/></th>
+                        {this.state.names.map((name,index) => (
+                            <tr key={index}>
+                            <th scope="row"><img alt={name.name.first} src={name.picture.thumbnail}/></th>
                             <td>{name.name.first}</td>
                             <td>{name.name.last}</td>
+                            <td>{name.cell}</td>
                             <td>{name.email}</td>
                         </tr>
                         ))}
